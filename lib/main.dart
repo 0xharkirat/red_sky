@@ -1,4 +1,7 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
+import 'package:intelligence/intelligence.dart';
 
 void main() {
   runApp(const MyApp());
@@ -45,12 +48,38 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   @override
+  void initState() {
+    super.initState();
+    _initSiri();
+  }
+
+  void _initSiri() {
+    Intelligence().selectionsStream().listen(_trackSiri);
+  }
+
+  void _trackSiri(String selection) {
+    log('Siri Command triggered: $selection');
+    switch (selection) {
+      case 'increment':
+        _incrementCounter();
+        break;
+      case 'refresh':
+        _refreshCounter();
+        break;
+      default:
+        break;
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
-        actions: [IconButton(onPressed: _refreshCounter, icon: Icon(Icons.refresh))],
+        actions: [
+          IconButton(onPressed: _refreshCounter, icon: Icon(Icons.refresh))
+        ],
       ),
       body: Center(
         child: Column(

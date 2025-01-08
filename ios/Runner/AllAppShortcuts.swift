@@ -1,17 +1,18 @@
 //
-//  OpenHeartShortcuts.swift
+//  AllAppShortcuts.swift
 //  Runner
 //
 //  Created by Harkirat Singh on 8/1/2025.
 //
+import AppIntents
 
 
-struct OpenHeartShortcuts: AppShortcutsProvider {
+struct AllAppShortcuts: AppShortcutsProvider {
   static var appShortcuts: [AppShortcut] {
     AppShortcut(
-      intent: ExampleAppIntent(),
+    intent: IncrementIntent(),
       phrases: [
-        "Draw my favorite shape in \(.applicationName)"
+        "Increase counter in \(.applicationName)"
       ]
     )
   }
