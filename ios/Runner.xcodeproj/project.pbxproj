@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		09447B3E2D2E83E800756405 /* IncrementIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09447B3D2D2E83E800756405 /* IncrementIntent.swift */; };
 		09D88D052D2E867400BBA27B /* AllAppShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D88D042D2E867400BBA27B /* AllAppShortcuts.swift */; };
+		09D88D072D2E89EE00BBA27B /* RefreshIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D88D062D2E89EE00BBA27B /* RefreshIntent.swift */; };
 		1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */; };
 		331C808B294A63AB00263BE5 /* RunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C807B294A618700263BE5 /* RunnerTests.swift */; };
 		3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B3967151E833CAA004F5970 /* AppFrameworkInfo.plist */; };
@@ -47,6 +48,7 @@
 		0834DDA4F0BADEF98CF77BD8 /* Pods-Runner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.release.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"; sourceTree = "<group>"; };
 		09447B3D2D2E83E800756405 /* IncrementIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementIntent.swift; sourceTree = "<group>"; };
 		09D88D042D2E867400BBA27B /* AllAppShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAppShortcuts.swift; sourceTree = "<group>"; };
+		09D88D062D2E89EE00BBA27B /* RefreshIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshIntent.swift; sourceTree = "<group>"; };
 		09E78CBE12C29DC0354BADE9 /* Pods_RunnerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunnerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB7A7AB06CF21BD9CB9D220 /* Pods-RunnerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnerTests.release.xcconfig"; path = "Target Support Files/Pods-RunnerTests/Pods-RunnerTests.release.xcconfig"; sourceTree = "<group>"; };
 		1498D2321E8E86230040F4C2 /* GeneratedPluginRegistrant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratedPluginRegistrant.h; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				09D88D062D2E89EE00BBA27B /* RefreshIntent.swift */,
 				09D88D042D2E867400BBA27B /* AllAppShortcuts.swift */,
 				09447B3D2D2E83E800756405 /* IncrementIntent.swift */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
@@ -384,6 +387,7 @@
 			files = (
 				09D88D052D2E867400BBA27B /* AllAppShortcuts.swift in Sources */,
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
+				09D88D072D2E89EE00BBA27B /* RefreshIntent.swift in Sources */,
 				09447B3E2D2E83E800756405 /* IncrementIntent.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
 			);

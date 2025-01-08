@@ -8,12 +8,22 @@ import AppIntents
 
 
 struct AllAppShortcuts: AppShortcutsProvider {
-  static var appShortcuts: [AppShortcut] {
-    AppShortcut(
-    intent: IncrementIntent(),
-      phrases: [
-        "Increase counter in \(.applicationName)"
-      ]
-    )
-  }
+    static var appShortcuts: [AppShortcut] {
+       return [
+            AppShortcut(
+                intent: IncrementIntent(),
+                phrases: [
+                    "Increase counter in \(.applicationName)",
+                    "Add counter in \(.applicationName)",
+                    "Increment counter in \(.applicationName)"
+                ]
+            ),
+            AppShortcut(
+                intent: RefreshIntent(),
+                phrases: [
+                    "Reset counter in \(.applicationName)"
+                ]
+            )
+        ]
+    }
 }
